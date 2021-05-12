@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    
+    background-color: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+}
+
+.logo{
+    width: 120px;
+    margin: 20px 50px 30px 30px;
+}
+
+.wcs , .desc{
+    text-align: center;
+}
+
+.wcs{
+    font-family: 'Commissioner', sans-serif; 
+    margin: 50px 70px 20px 70px;
+    font-size: xx-large;
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+.desc{
+    line-height: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #d89494;
+    font-size: medium;
+}
+
+.mail{
+    margin: 35px 30px 50px 30px;
+    height: 50px;
+    width: 320px;
+    border-radius: 25px ;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-color: rgba(229,211,213,255);
+    background-color: rgba(255,246,245,255);
+    padding: 20px 0px 20px 30px;
+    position: relative;
+    
+}
+
+.mail::placeholder{
+    color: #d89494;
+}
+
+.sub{
+    width: 70px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: #d89494;;
+    font-weight: 300;
+    font-size: 35px;
+    position: absolute;
+    top: 655px;
+    right: 20px;
+    
+}
+
+
+/* desktop view */
+
+@media screen and (min-width: 1200px) {
+    .main, .ba, .wcs, .desc, .mail, .sub, .logo {
+        display: none;
+    }
+
+
+}
