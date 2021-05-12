@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Base Apparel</title>
 </head>
 <body>
-    <!-- Mobile view -->
-    <div class="main">
-    <div class="ba">    <img class="logo" src="logo.svg" alt=""></div>
-    <img class="hero" src="hero-mobile.jpg" alt="">
-    <p class="wcs"> <span style="font-family: 'Josefin Sans', sans-serif; color: #f5b1b1;">WE'RE</span> <br> COMING <br>SOON</p>
-    <p class="desc">Hello-fellow shoppers! We're currently building  <br> our new fashion store. Add your email below to <br>stay up-to-date with announcements and or <br> launch deals.</p>
-
-    <input type="email" placeholder="Email Address" class="mail">
-    <input type="submit" value=">" class="sub">
-</div>
-
-
-<!-- Desktop view -->
-
-    <div>
+    <!-- Mobile View -->
+    <div class="logo">
+        <img src="logo.svg" class="logo-img" alt="">
+    </div>
+    <div class="hero">
+        <img src="hero-mobile.jpg" class="hero-img" alt="">
+    </div>
+    <div class="wcs">
+        <p class="we">WE'RE</p>
+        <p class="coming">COMING</p>
+        <p class="coming">SOON</p>
+    </div>
+    <div class="desc">
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    </div>
+    <div class="mail">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value=">" class="sub">
+    </div>
+    
+    <!-- Desktop View -->
+    <div class="two_sections">
         <section class="part1">
-            <img  src="logo.svg" alt="">
-            <p class="wcsd"> <span style="font-family: 'Josefin Sans', sans-serif; color: #f5b1b1;">WE'RE</span> <br> COMING <br>SOON</p>
-    <p class="descd">Hello-fellow shoppers! We're currently building  our new <br> fashion store. Add your email below to stay up-to-date with <br> announcements and or launch deals.</p>
-
-    <input type="email" placeholder="Email Address" class="maild">
-    <input type="submit" value=">" class="subd">
+            <div class="logo-desktop">
+                <img src="logo.svg" alt="" class="logo-desktop-img">
+            </div>
+            <div class="wcsd">
+                <p class="desk-we">WE'RE</p>
+                <p class="desk-coming">COMING</p>
+                <p class="desk-coming">SOON</p>
+            </div>
+            <div class="descd">
+                <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            </div>
+            <div class="maild">
+                <input type="email" placeholder="Email Address">
+                <input type="submit" value=">" class="subd">
+            </div>
         </section>
 
-       
-
-
-        <section class="part2"> <img src="hero-desktop.jpg" alt=""></section>
+        <section class="part2">
+            <img src="hero-desktop.jpg" alt="">
+        </section>
     </div>
-
-    
 </body>
 </html>

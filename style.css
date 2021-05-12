@@ -1,150 +1,184 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@media screen and  (min-width: 375px){
-    .part1, .part2, .wcsd, .descd, .maild, .subd{
-        display: none;
-    } 
-
-.main{
-    
-    background-color: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
-.logo{
-    width: 120px;
-    margin: 20px 50px 30px 30px;
+.logo img {
+    padding: 30px;
 }
 
-.wcs , .desc{
+.logo-img {
+    width: 180px;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.wcs {
+    width: 100%;
+    margin-top: 60px;
     text-align: center;
+    font-size: 3rem;
+    line-height: 50px;
 }
 
-.wcs{
-    font-family: 'Commissioner', sans-serif; 
-    margin: 50px 70px 20px 70px;
-    font-size: xx-large;
+.we {
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
     letter-spacing: 10px;
-    font-weight: 300;
 }
 
-.desc{
-    line-height: 25px;
-    font-family: "Josefin Sans", sans-serif;
-    color: #d89494;
-    font-size: medium;
+.coming {
+    font-weight: 600;
+    letter-spacing: 10px;
 }
 
-.mail{
-    margin: 35px 30px 50px 30px;
-    height: 50px;
-    width: 320px;
-    border-radius: 25px ;
-    border: 1px solid hsl(0, 36%, 70%);
-    border-color: rgba(229,211,213,255);
-    background-color: rgba(255,246,245,255);
-    padding: 20px 0px 20px 30px;
-    position: relative;
-    
+.desc {
+    padding: 30px;
+    text-align: center;
+    color: hsl(0, 36%, 70%);
 }
 
-.mail::placeholder{
-    color: #d89494;
+.mail {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 5px;
+    margin-bottom: 30px;
 }
 
-.sub{
-    width: 70px;
-    height: 50px;
-    border-radius: 25px;
+.mail input {
+    padding: 15px;
+    border-radius: 40px;
+    width: 100%;
+    border: 1px solid hsl(0, 80%, 86%);
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    outline: none;
+}
+
+.mail input::placeholder{
+    content: "";
+    color: hsl(0, 80%, 86%);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 20px;
+}
+
+.mail .sub {
+    width: 80px;
+    border-radius: 40px;
+    position: absolute;
+    right: 30px;
     border: none;
     color: white;
-    background-color: #d89494;;
+    font-size: 2.1rem;
     font-weight: 300;
-    font-size: 35px;
-    position: absolute;
-    top: 655px;
-    right: 18px;
-    
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 18px;
 }
-}
-/* desktop view */
 
-@media screen and (min-width: 1200px) {
-    .main, .ba, .wcs, .desc, .mail, .sub, .logo {
+@media screen and (max-width: 768px) {
+    .two_sections, .part1, .logo-desktop, .logo-desktop-img, .desk-wcs, .desk-we, .desk-coming, .desk-desc, .maild, .desk-sub, .part2 {
         display: none;
     }
-.part1{
-    width: 65%;
-    float: left;
-    height: 100vh;
-    background-image: url('bg-pattern-desktop.svg');
-    padding: 70px 0px 120px 120px;
+}
+
+@media screen and (max-width: 1024px) {
+    .two_sections, .part1, .logo-desktop, .logo-desktop-img, .desk-wcs, .desk-we, .desk-coming, .desk-desc, .maild, .desk-sub, .part2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo, .logo-img, .hero, .hero-img, .wcs, .we, .coming, .desc, .mail, .sub {
+        display: none;
+    }
+
+    .two_sections {
+        max-height: 100vh;
+    }
+
+    .part1 {
+        max-width: 50%;
+        float: left;
+        padding: 60px 120px;
+    }
+
+    .part2 {
+        max-width: 50%;
+        float: right;
+    }
+
+    .wcsd {
+        width: 100%;
+        margin-top: 120px;
+        font-size: 3rem;
+        line-height: 55px;
+    }
+
+    .desk-we {
+        color: hsl(0, 36%, 70%);
+        font-weight: 100;
+        letter-spacing: 10px;
+    }
+
+    .desk-coming {
+        font-weight: 600;
+        letter-spacing: 10px;
+    }
+
+    .descd {
+        color: hsl(0, 36%, 70%);
+        margin-top: 30px;
+        line-height: 30px;
+    }
+
+    .maild {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
     
-}
-
-.part1 img{
-    height: 30px;
-    margin-bottom: 80px;
-}
-
-.maild{
-    margin: 35px 30px 0px 0px;
-    height: 50px;
-    width: 418px;
-    border-radius: 25px ;
-    border: 1px solid hsl(0, 36%, 70%);
-    border-color: rgba(229,211,213,255);
-    background-color: rgba(255,246,245,255);
-    padding: 20px 0px 20px 30px;
-    position: relative;
+    .maild input {
+        padding: 20px 30px;
+        border-radius: 40px;
+        width: 100%;
+        border: 1px solid hsl(0, 80%, 86%);
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        outline: none;
+    }
     
-}
-
-.maild::placeholder{
-    color: #d89494;
-}
-
-.subd{
-    width: 70px;
-    height: 50px;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    background-color: #d89494;;
-    font-weight: 300;
-    font-size: 35px;
-    position: absolute;
-    top: 83.8%;
-    left: 37%;
+    .maild input::placeholder{
+        content: "";
+        color: hsl(0, 80%, 86%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        margin-left: 20px;
+    }
     
-}
-
-.wcsd{
-  font-size: 50px;
-  letter-spacing: 16px;
-  margin-bottom: 20px;
-}
-
-.descd{
-  font-family: "Josefin Sans", sans-serif;
-  color: #d89494;
-  font-weight: bold;
-  line-height: 24px;
-}
-
-
-.part2{
-    width: 35%;
-    float: left;
-    height: 80%;
-}
-
-.part2 img{
-    height: 100vh;
-}
-
-
+    .maild .subd {
+        width: 80px;
+        border-radius: 40px;
+        position: absolute;
+        left: 465px;
+        border: none;
+        color: white;
+        font-size: 2.1rem;
+        font-weight: 300;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 18px;
+        cursor: pointer;
+    }
 }
